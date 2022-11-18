@@ -1,14 +1,17 @@
-package com.crud.bean;
+package com.example.bean;
 
 import java.util.Date;
 
 public class BoardVO {
+
+	private String photo;
 	private int seq;
 	private String title;
 	private String writer;
 	private String content;
 	private Date regdate;
 	private int cnt;
+	private String category;
 	
 	public int getSeq() {
 		return seq;
@@ -45,5 +48,18 @@ public class BoardVO {
 	}
 	public void setCnt(int cnt) {
 		this.cnt = cnt;
+	}
+	public String getCategory() {
+		return category;
+	}
+	public void setCategory(String category) {
+		this.category = category;
+	}
+	public String getPhoto() {
+		return photo;
+	}
+
+	public void setPhoto(String photo) {
+		this.photo = photo;
 	}
 }
